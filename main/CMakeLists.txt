@@ -1,2 +1,11 @@
-idf_component_register(SRCS "main.cpp"
-        INCLUDE_DIRS ".")
+idf_component_register(
+        SRCS
+        "main.cpp"
+        "device/components/ServoComponent.cpp"
+        "device/components/BaseComponent.cpp"
+        "device/MicroController.cpp"
+        INCLUDE_DIRS
+        "."
+        "device"
+        "device/components"
+)
